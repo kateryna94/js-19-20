@@ -1,0 +1,23 @@
+@mixin logo {
+    font-family: 'Ubuntu', sans-serif;
+}
+@mixin footer_links {
+    margin: 0 auto;
+    width: 1160px;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+@mixin img_block {
+    width: 1160px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+$base-color: #2a2d32;
+$base-link-color: #fff;
+$highlighted: #f4b60d;
+$font_col: #2a2b2e;
+$hover_fa: #248cec;

@@ -1,0 +1,26 @@
+@import "mixins";
+@import "header";
+@import "menu";
+@import "slider";
+@import "slider_slogan";
+@import "articles";
+@import "footer_logos_links";
+@import "footer_info";
+@import "service_block";
+@import "news_section";
+@import "accordion_section";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider_wrapper {
+  margin-bottom: 72px;
+  margin: 0 auto;
+  width: 1160px;
+}

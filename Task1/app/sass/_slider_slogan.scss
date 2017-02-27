@@ -1,0 +1,26 @@
+.slogan {
+    @include logo;
+    position: absolute;
+    margin-left: 80px;
+    bottom: 30px;
+    width: 247px;
+    height: 142px;
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 52px;
+    text-transform: uppercase;
+
+    div {
+        position: absolute;
+        bottom: -33px;
+        left: 30px;
+
+        span {
+            color: $highlighted;
+        }
+
+        p {
+            color: $base-link-color;
+        }
+    }
+}

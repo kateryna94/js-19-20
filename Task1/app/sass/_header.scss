@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    padding-top: 36px;
+    margin: 0 auto;
+    width: 1160px;
+
+    img {
+        height: 36px;
+        margin: 0 4px 0 2px;
+    }
+}
+
+.logo__wrapper {
+    display: flex;
+
+    .header__logo {
+        @include logo;
+        line-height: 0;
+
+        h3 {
+            font-size: 30px;
+            margin-top: 11px;
+            letter-spacing: -1px;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 300;
+            opacity: 0.65;
+            color: #333;
+            letter-spacing: 2.5px;
+            margin-top: 21px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.fa {
+    width: 15px;
+    height: 15px;
+    opacity: 0.2;
+    margin: 0 10px;
+
+    &:hover {
+      color: #248cec;
+      opacity: 1;
+    }
+}

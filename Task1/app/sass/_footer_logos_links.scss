@@ -1,0 +1,98 @@
+.logos__section {
+    // margin: 0 auto;
+    // width: 1160px;
+    vertical-align: middle;
+
+    ul {
+        display: flex;
+        margin: 0 auto;
+        width: 1160px;
+        list-style: none;
+        height: 240px;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin: 0 20px;
+        }
+    }
+}
+
+.footer__navigation {
+    width: 100%;
+    height: 435px;
+    background-color: $base-color;
+    position: relative;
+
+    .main_links {
+        @include footer_links;
+        height: 120px;
+        align-items: center;
+
+        a {
+            @include logo;
+            color: #828385;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding-right: 198px;
+
+            &:hover {
+                color: $hover_fa;
+            }
+        }
+
+        .main_links__links {
+            margin-left: -22px;
+        }
+
+        .main_links__blogroll {
+            margin-left: 85px;
+        }
+
+        .main_links__about {
+            margin-left: -2px;
+        }
+    }
+
+    .secondary_links {
+        @include footer_links;
+        height: 121px;
+        align-items: flex-start;
+
+        .socials {
+            margin-left: -20px;
+        }
+
+        li {
+            list-style: none;
+            border-top: 0.5px solid #393c40;
+            margin-left: 20px;
+
+            &:first-child {
+                border-top: 0;
+            }
+
+            a {
+                list-style: none;
+                width: 92px;
+                color: $base-link-color;
+                opacity: 0.3;
+                padding-right: 160px;
+                padding-top: 10px;
+                text-decoration: none;
+                font-family: Arial;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 36px;
+
+                &:hover {
+                    color: $hover_fa;
+                }
+            }
+        }
+    }
+
+}

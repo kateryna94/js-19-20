@@ -1,0 +1,50 @@
+section {
+    display: flex;
+    margin: 0 auto;
+    width: 1160px;
+
+    article {
+        display: flex;
+
+        .number {
+            @include logo;
+            opacity: 0.1;
+            color: #2a2b2e;
+            font-size: 90px;
+            font-weight: 500;
+            line-height: 20px;
+        }
+
+        div {
+            margin-left: 32px;
+            margin-top: 7px;
+            width: 230px;
+
+            p {
+                color: #8a8a8a;
+                font-family: Arial;
+                font-size: 13px;
+                font-weight: 400;
+                margin-bottom: 25px;
+            }
+
+            h2 {
+                @include logo;
+                color: $font_col;
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 25px;
+            }
+            a {
+              @include logo;
+              color: $font_col;
+              font-size: 13px;
+              font-weight: 500;
+              text-decoration: none;
+              &:hover {
+                color: $hover_fa;
+              }
+            }
+        }
+    }
+}

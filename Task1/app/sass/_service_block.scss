@@ -1,0 +1,46 @@
+.service__block__wrapper {
+    width: 100%;
+    height: 500px;
+    background-color: $base-color;
+    margin-top: 88px;
+
+    .service__block {
+        @include img_block;
+
+        figcaption {
+            @include logo;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            color: $base-link-color;
+            padding-top: 15px;
+
+            &:hover {
+                color: $highlighted;
+            }
+        }
+    }
+
+    .service__block__hover {
+        @include img_block;
+        position: absolute;
+        top: 939px;
+        left: 42px;
+
+        div {
+            width: 260px;
+            height: 260px;
+            opacity: 0.9;
+            background-color: $hover_fa;
+            opacity: 0;
+
+            img {
+                text-align: center;
+                position: absolute;
+                margin-top: 115px;
+                margin-left: 115px;
+            }
+            
+        }
+    }
+}
