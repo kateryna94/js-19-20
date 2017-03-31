@@ -83,6 +83,9 @@
 ===================================*/
 /** RESET AND LAYOUT
 ===================================*/
+.slider_wrapper {
+  position: relative; }
+
 .bx-wrapper {
   position: relative;
   margin: 0 auto 60px;
@@ -262,8 +265,8 @@ ul.bxslider {
 .slogan {
   font-family: 'Ubuntu', sans-serif;
   position: absolute;
-  margin-left: 80px;
-  bottom: 30px;
+  left: 80px;
+  top: 420px;
   width: 247px;
   height: 142px;
   font-size: 54px;
@@ -392,11 +395,13 @@ section {
           color: #248cec; }
 
 .footer__info__wrapper {
-  background-color: #fff;
-  margin-top: -65px;
-  opacity: 0.05;
+  background-color: #434647;
+  position: absolute;
   height: 65px;
-  width: 100%; }
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.6); }
   .footer__info__wrapper .footer__info {
     width: 1160px;
     margin: 0 auto;
@@ -446,8 +451,7 @@ section {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 939px;
-    left: 42px; }
+    top: 939px; }
     .service__block__wrapper .service__block__hover div {
       width: 260px;
       height: 260px;
@@ -577,9 +581,12 @@ section {
 
 .wrapper {
   width: 100%;
-  margin: 0 auto; }
+  min-width: 1160px;
+  margin: 0 auto;
+  position: relative; }
 
 .slider_wrapper {
   margin-bottom: 72px;
   margin: 0 auto;
-  width: 1160px; }
+  width: 1160px;
+  position: relative; }

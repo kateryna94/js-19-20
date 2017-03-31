@@ -1,10 +1,11 @@
 .footer__info__wrapper {
-    background-color: $base-link-color;
-    // position: absolute;
-    margin-top: -65px;
-    opacity: 0.05;
+    background-color: #434647;
+    position: absolute;
     height: 65px;
     width: 100%;
+    bottom: 0;
+    left: 0;
+    color: rgba(255, 255, 255, .6);
 
     .footer__info {
         width: 1160px;
@@ -17,9 +18,8 @@
                 display: inline-block;
 
                 li {
-                  display: inline-block;
+                    display: inline-block;
                     list-style: none;
-                    // color: $base-link-color;
                     font-family: Arial;
                     font-size: 12px;
                     font-weight: 400;
@@ -30,8 +30,6 @@
     }
 
     .copyright {
-        // opacity: 0.2;
-        // color: $base-link-color;
         font-family: Arial;
         font-size: 12px;
         font-weight: 400;
